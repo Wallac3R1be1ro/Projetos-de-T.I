@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang ="pt-br">
+	<head>
+		<meta charset = "UTF-8">
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+		<title>PrehistoricFeather</title>
+		<link rel = "stylesheet" type='text/css' media='screen' href = "../CSS/style.css">
+	</head>
+	<body>
+		<!-- === Navbar === -->
+		<nav class="navbar">
+			<h1 class="logo">ADVENTURE</h1>
+			<ul class="nav-links">
+				<li class="active"><a href="#"></a>Home</li>
+				<li><a href="#"></a>Tours</li>
+				<li><a href="#"></a>Explore</li>
+				<li><a href="#"></a>About</li>
+				<li class="ctn"><a href="#"></a>Contact</li>
+			</ul>
+			<img src="../IMG/menu-btn.png" alt="" class="menu-btn">
+		</nav>
+		<!-- === header === -->
+		<header>
+			<div class="header-content">
+				<h2>Explore The Colorful World</h2>
+				<div class="line"></div>
+				<h1>A WONDERFUL GIFT</h1>
+				<a href="#" class="ctn">Learn More</a>
+			</div>
+		</header>
+		
+		<!-- === Events === -->	
+		<section class="events">
+			<div class="title">
+				<h1>Upcoming Events</h1>
+				<div class="line"></div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<img src="../IMG/images1.jpeg"  height="280px" right="280px" alt="">
+					<h4>Everest Camp Trek</h4>
+					<p>..................................................................................</p>
+					<a href="#" class="ctn">Learn More</a>
+				</div>
+				<div class="col">
+					<img src="../IMG/images4.jpeg" height="280px" right="280px" alt="">
+					<h4>Walking Holidays</h4>
+					<p>..................................................................................</p>
+					<a href="#" class="ctn">Learn More</a>
+				</div>
+			</div>
+		</section>
+		
+		<section class ="explore">
+			<div class ="explore-content">
+				<h1>EXPLODE THE WORLD</h1>
+				<div class="line"></div>
+				<p>..................................................................................</p>
+				<a href="#" class="ctn">Learn More</a>
+			</div>
+		</section>
+		
+		<section class="tours">
+			<div class="row">
+				<div class="col content-col">
+				<h1>UPCOMING TOURS & DESTINATION</h2>
+				<div class="line"></div>
+				<p>ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</p>
+				<a href="#" class="ctn">Learn More</a>
+			</div>
+			
+			<div class="col image-col">
+				<div class="image-gallery">
+					<img src="../IMG/carnotaurus.jpg" alt="">
+					<img src="../IMG/preguica-gigante.jpg" alt="">
+					<img src="../IMG/Trilobita.jpg" alt="">
+					<img src="../IMG/Mastodon.jpg" alt="">
+				</div>
+			</div>
+		</section>
+		<section class="footer">
+			<p>Contato:</p>
+			<p>Copyrights° 2024 Todos os direitos reservados.</p>
+		</section>
+		<script>
+			const menuBtn = document.querySelector('.menu-btn')
+			const navlinks = document.querySelector('.nav-links')
+			
+			menuBtn.addEventListener('click',()=>{
+				navlinks.classList.toggle("mobile-menu")
+			})
+		</script>
+	</body>
+</html>
