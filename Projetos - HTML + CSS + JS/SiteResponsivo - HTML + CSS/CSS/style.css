@@ -1,5 +1,5 @@
 /* === Google Fonts ===*/
-@import url('#');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
 /* === Corpo da página ===*/
 *{
 	margin: 0;
@@ -38,6 +38,7 @@ body , html {
 .nav-links li {
 	margin: 0 30px;
 }
+/* === Cabeçalho Site ===*/
 header {
 	width: 100vw;
 	height: 100vh;
@@ -56,6 +57,7 @@ header {
 .header-content h2 {
 	font-size: 4vmin;
 }
+/* === Estilo padrão de linha ===*/
 .line {
 	width: 150px;
 	height: 4px;
@@ -68,6 +70,7 @@ header {
 	margin-top: 50px;
 	margin-bottom: 30px;
 }
+/* === Estilo padrão botão ===*/
 .ctn{
 	padding: 8px 15px;
 	background: #fc036b;
@@ -82,7 +85,7 @@ header {
 	cursor: pointer;
 	display: none
 }
-/* === Events ===*/
+/* === Estilo padrão da Section ===*/
 section{
 	width: 80%;
 	margin: 80px auto;
@@ -118,7 +121,19 @@ p {
 .events .ctn{
 	margin-top: 30px;
 }
-
+/* === Section 1 ===*/
+.container {
+	display: inline-flex;
+	text-align: left;
+}
+.container img{
+	width: 300px;
+	margin-right: 20px;
+}
+.container p{
+	width: 300px;
+}
+/* === Section 2 ===*/
 .explore{
 	width: 100%;
 	height: 100vh;
@@ -149,6 +164,8 @@ p {
 .explore-content .ctn{
 	margin-top: 40px;
 }
+
+/* === Section 3 ===*/
 .content-col{
 	width: 40%;
 }
@@ -162,24 +179,21 @@ image-col{
 	align-items: center;
 }
 .image-gallery img{
-	max-width: 250px;
+	max-width: 180px;
 	margin: 10px;
 }
-.content-col h1{
+.title h1{
 	font-size: 7vmin;
 	color: #484872;
 }
-.content-col .line{
-	margin-left: -1px;
+.title .line{
+	margin-bottom: 20px;
 }
-.content-col p{
+/*.title p{
 	padding: 0;
 	margin: 30px auto;
-}
-.content-col .ctn{
-	margin-left: -100px;
-}
-
+}*/
+/* === Footer ===*/
 .footer{
 	width: 100%;
 	min-height: 100px;
