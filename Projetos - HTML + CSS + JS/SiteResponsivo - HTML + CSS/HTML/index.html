@@ -8,63 +8,74 @@
 		<link rel = "stylesheet" type='text/css' href = "../CSS/style.css">
 	</head>
 	<body>
-		<!-- === Navbar === -->
-		<nav class="navbar">
-			<h1 class="logo">ADVENTURE</h1>
+	<!-- === Navbar === -->
+	<nav class="navbar">
+		<h1 class="logo">PrehistoricFeather</h1>
 			<ul class="nav-links">
 				<li class="active"><a href="#"></a>Home</li>
 				<li><a href="#"></a>Tours</li>
 				<li><a href="#"></a>Explore</li>
 				<li><a href="#"></a>About</li>
 				<li class="ctn"><a href="#"></a>Contact</li></ul>
-			<img src="../IMG/menu-btn.png" alt="" class="menu-btn">
-		</nav>
+		<img src="###" alt="" class="menu-btn">
+	</nav>
 		<!-- === header === -->
-		<header>
-			<div class="header-content">
-				<h2>Explore The Colorful World</h2>
-				<div class="line"></div>
-				<h1>A WONDERFUL GIFT</h1>
-				<a href="#" class="ctn">Learn More</a>
-			</div>
-		</header>
+	<header>
+		<div class="header-content">
+			<h2>Explore um novo mundo</h2>
+			<div class="line"></div>
+			<h1>O PASSADO DO NOSSO PLANETA</h1>
+			<a href="#" class="ctn">Conheça sobre</a>
+		</div>
+	</header>
 		<!-- === section 1 === -->	
-		<section class="events">
+	<section class="events">
 			<div class="title">
-				<h1>Upcoming Events</h1>
+				<h1>Paleoarte e Fosseis</h1>
 				<div class="line"></div>
 			</div>
-			<div class="container">
-				<div class="img">
-					<img src="../IMG/img-fundo.png">
+			<div class="row">
+				<div class="col">
+					<img src="../IMG/DinoImg3.jpeg" width="600px" right="600px" alt ="">
+					<h4>Obras e Pinturas</h4>
+					<p>A Paleoarte é uma àrea onde utiliza-se técnicas de ilustração e anatomia para representar animais extintos, 
+					neste segmento, a criatividade influência na interpretação de como esses animais eram em vidas.
+					</p>
+					<a href="#" class="ctn">Conheça sobre</a>
 				</div>
-				<div class="p"><p>
-						"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-						sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-						est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-						modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
-						quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-						Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-						vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-					</p></div>
+				<div class="col">
+					<img src="../IMG/DinoImg2.jpeg" width="600px" right="600px" alt="">
+					<h4>Fossilização e Escavação</h4>
+					<p>Após a morte de um animal, o resto de seu corpo permance exposto a diversas adversidades naturais,
+					onde em uma longa escala de tempo, a permanencia de sedimentos por milhares de anos resulta no processo de fossilização.
+					</p>
+					<a href="#" class="ctn">Conheça sobre</a>
+				</div>
 			</div>
-		</section>
+	</section>
 		<!-- === section 2 === -->	
-		<section class ="explore">
+	<section class ="explore">
 			<div class ="explore-content">
-				<h1>EXPLODE THE WORLD</h1>
+				<h1>CONHEÇA OS GIGANTES DO PASSADO</h1>
 				<div class="line"></div>
-				<p>..................................................................................</p>
-				<a href="#" class="ctn">Learn More</a>
+				<p>Conheça os gigantes da America do Sul, do Jurrásico e Cretásseo, Spinossauro e Carnotauro até a megafauna no Pleistoceno com Tatus do tamanho de um fusca
+					e Preguissas maiores que elefantes atuais.
+				</p>
+				<a href="#" class="ctn">Conheça sobre</a>
 			</div>
-		</section>
+	</section>
 		<!-- === section 3 === -->	
-		<section class="tours">
-		<div class="title">
-				<h1>Upcoming Events</h1>
+	<section class="tours">
+		<div class="row">
+			<div class="col content-col">
+				<h1>Períodos Geológicos da Terra</h1>
 				<div class="line"></div>
-			</div>		
-			<div class="col image-col">
+				<p>Conheça a Fauna, Flora e Biodiversidade da antiguidade, o apogeu da vida nos oceanos durante o Crambiano, altas temperaturas globais do Permiano até o Jurrásico
+					e a Era do Gelo do Plioceno.
+				</p>
+				<a href="#" class="ctn">Conheça sobre</a>
+			</div>
+			<div class= "col image-col">
 				<div class="image-gallery">
 					<img src="../IMG/carnotaurus.jpg" alt="">
 					<img src="../IMG/preguica-gigante.jpg" alt="">
@@ -72,8 +83,8 @@
 					<img src="../IMG/Mastodon.jpg" alt="">
 				</div>	
 			</div>
-			</div>
-		</section>
+		</div>
+	</section>
 		<!-- === footer === -->	
 		<section class="footer">
 			<p>Contato:</p>
@@ -85,7 +96,7 @@
 			const navlinks = document.querySelector('.nav-links')
 			
 			menuBtn.addEventListener('click',()=>{
-				navlinks.classList.toggle("mobile-menu")
+				navlinks.classList.toggle('mobile-menu')
 			})
 		</script>
 		<!-- === End === -->	
