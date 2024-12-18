@@ -8,6 +8,7 @@
 		<link rel = "stylesheet" type='text/css' href = "../CSS/style.css">
 	</head>
 	<body>
+	<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 	<!-- === Navbar === -->
 	<nav class="navbar">
 		<h1 class="logo">PrehistoricFeather</h1>
@@ -19,7 +20,8 @@
 				<li class="ctn"><a href="#"></a>Contato</li></ul>
 		<img src="../IMG/menu-btn.png" alt="" class="menu-btn">
 	</nav>
-		<!-- === header === -->
+	<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<!-- === header === -->
 	<header>
 		<div class="header-content">
 			<h2>Explore um novo mundo</h2>
@@ -28,8 +30,9 @@
 			<a href="#" class="ctn">Conheça sobre</a>
 		</div>
 	</header>
-		<!-- === section 1 === -->	
-	<section class="events">
+	<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<!-- === Conteudo 1 === -->	
+	<section class="conteudo1">
 			<div class="title">
 				<h1>Paleoarte e Fosseis</h1>
 				<div class="line"></div>
@@ -39,62 +42,67 @@
 					<img class = "img1" src="../IMG/DinoImg3.jpeg" alt ="">
 					<h4>Obras e Pinturas</h4>
 					<p>A Paleoarte é uma àrea onde utiliza-se técnicas de ilustração e anatomia para representar animais extintos, 
-					neste segmento, a criatividade influência na interpretação de como esses animais eram em vidas.
-					</p>
+					neste segmento, a criatividade influência na interpretação de como esses animais eram em vidas.</p>
 					<a href="#" class="ctn">Conheça sobre</a>
 				</div>
+				<!---------------------------------------------------------------------------------------------------------------------------->
 				<div class="col">
 					<img class = "img2" src="../IMG/DinoImg2.jpeg" alt="">
 					<h4>Fossilização e Escavação</h4>
 					<p>Após a morte de um animal, o resto de seu corpo permance exposto a diversas adversidades naturais,
-					onde em uma longa escala de tempo, a permanencia de sedimentos por milhares de anos resulta no processo de fossilização.
-					</p>
+					onde em uma longa escala de tempo, a permanencia de sedimentos por milhares de anos resulta no processo de fossilização.</p>
 					<a href="#" class="ctn">Conheça sobre</a>
 				</div>
 			</div>
 	</section>
-		<!-- === section 2 === -->	
-	<section class ="explore">
-			<div class ="explore-content">
+	<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<!-- === Conteudo 2 === -->	
+	<section class ="conteudo2">
+			<div class ="explorar">
 				<h1>CONHEÇA OS GIGANTES DO PASSADO</h1>
 				<div class="line"></div>
 				<p>Conheça os gigantes da America do Sul, do Jurrásico e Cretásseo, Spinossauro e Carnotauro até a megafauna no Pleistoceno com Tatus do tamanho de um fusca
-					e Preguissas maiores que elefantes atuais.
-				</p>
+				e Preguissas maiores que elefantes atuais.</p>
 				<a href="#" class="ctn">Conheça sobre</a>
 			</div>
 	</section>
-		<!-- === section 3 === -->	
-	<section class="tours">
+	<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<!-- === Conteudo 3 === -->	
+	<section class="conteudo3">
 		<div class="row">
 			<div class="col content-col">
 				<h1>Períodos Geológicos da Terra</h1>
 				<div class="line"></div>
 				<p>Conheça a Fauna, Flora e Biodiversidade da antiguidade, o apogeu da vida nos oceanos durante o Crambiano, altas temperaturas globais do Permiano até o Jurrásico
-					e a Era do Gelo do Plioceno.
-				</p>
+				e a Era do Gelo do Plioceno.</p>
 				<a href="#" class="ctn">Conheça sobre</a>
 			</div>
 			<div class= "col image-col">
 				<div class="image-gallery">
-					<img src="../IMG/carnotaurus.jpg" alt="">
-					<img src="../IMG/preguica-gigante.jpg" alt="">
-					<img src="../IMG/Trilobita.jpg" alt="">
+					<img src="../IMG/Ordoviciano.png" alt="">
+					<img src="../IMG/Carbonifero.png" alt="">
+					<img src="../IMG/Jurassico.png" alt="">
 					<img src="../IMG/Mastodon.jpg" alt="">
 				</div>	
 			</div>
 		</div>
 	</section>
-		<!-- === footer === -->	
-		<section class="footer">
-			<p>Copyright 2024° | Wallace Santos Ribeiro | Todos os direitos reservados</p>
-			<p class="links"><a href="" alt="">Instagram</a> | <a href="" alt="">Youtube</a></p>
-		</section>
+	<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<!-- === footer === -->	
+	<section class="footer">
+		<p>Sobre</p>
+			<p>PrehistoricFeather é um site com foco em conteúdos relacionados a paleontologia da América do Sul. Explorando sua Fauna, Flora e Biodiversidade do passado.</p>
+			<img src="../IMG/tiktok.png" alt="">
+			<img src="../IMG/instagram.png" alt="">
+			<div class="licenca">
+				<p>Copyright 2024° | Wallace Santos Ribeiro | Todos os direitos reservados</p>
+			</div>
+	</section>
+	<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 		<!-- === Menu JS === -->	
 		<script>
 			const menuBtn = document.querySelector('.menu-btn')
 			const navlinks = document.querySelector('.nav-links')
-			
 			menuBtn.addEventListener('click',()=>{
 				navlinks.classList.toggle('mobile-menu')
 			})
