@@ -1,0 +1,193 @@
+body{margin: 0; background-color: rgb(199, 233, 205);}
+
+/*Cabeçalho do site*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(74, 173, 117);
+    padding: 1em;
+}
+/*----------------------------------------------------------------------*/
+/*Icone carrinho e login*/
+.Favoritos{
+    margin-left: 55%;
+}
+.Acesso{
+    margin-left: 5px;
+}
+/*-----------------------------------------------------------------------*/
+/*Barra de Pesquisa*/
+.pesquisa{
+    width: 310px;
+    height: 40px;
+    margin: 50px auto;
+}
+#texto{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.botom{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(44, 156, 63);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#texto:focus{
+    border: solid 2px #30dd20;
+}
+/*-----------------------------------------------------------------------*/
+/*Tópicos do site*/
+
+.top1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.menu, ul{
+    position: relative;
+    background-color: rgb(8, 109, 21);
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    text-decoration: none;
+    background-color: rgb(8, 109, 21);
+    color: rgb(234, 247, 234);
+    padding: 2px 30px;
+    display: block;
+
+}
+.menu ul li a:hover{
+    background: #30dd20;
+}
+ul li ul{
+    position: absolute;
+    min-width: 130px;
+    display: none;
+    background: lightgreen;
+}
+ul ul li{
+    display: block;
+    background: lime;
+}
+ul li:hover ul{
+    display: block;
+}
+
+/*-----------------------------------------------------------------------*/
+/*Conteúdo do site*/
+section{
+    float: left;
+    width: 75%;
+
+}
+article{
+    display: inline-block;
+    padding: 28px;
+    margin: 15px;
+}
+/*Estilo do formúlario*/
+.form1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: rgb(8, 109, 21);/*rgb(74, 173, 117)/*(8, 109, 21)*/;
+    max-width: 500px;
+}
+h1{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+}
+input, textarea{
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 1px solid;
+}
+input:hover, textarea:hover, input:focus, textarea:focus{
+    border-color: #000006;
+    box-shadow: 5px 0px 9px rgb(74, 173, 117);
+    background-color: rgb(108, 216, 117);
+    color: black;
+}
+.enviar{
+    background-color: #32a57f;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+textarea{
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+.form1 label{
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+/*.text{
+    /*Tamanho da borda*//*
+    width: 243px;                                     
+    height: 100px;
+    background-color: rgb(25, 201, 63);
+    border: solid 4px rgb(8, 109, 21);
+}*/
+    /*design do texto dentro da borda*/
+.text{font-size: 18px; font-family: Arial, Helvetica, sans-serif;}
+/*-----------------------------------------------------------------------*/
+/*Parte lateral do site*/
+aside{
+    float: left;
+    width: 23%;
+    padding-left: 20px;
+}
+/*-----------------------------------------------------------------------*/
+/*Rodapé do site*/
+footer{
+    padding: 20px;
+    background-color: rgb(8, 109, 21);
+    color: rgb(181, 204, 191);
+    margin-top: 20px;
+    display: table;
+    width: 100%;
+}
+
+footer dl, footer .propagand4s{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer dt{
+    font-weight: bold;
+}
+
+footer dd{
+    margin-left: 0;
+}
+
+footer .propagand4s{
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*-----------------------------------------------------------------------*/
