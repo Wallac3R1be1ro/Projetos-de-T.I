@@ -34,14 +34,48 @@
 	</header>
 	<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 	<!-- === Conteudo 1 === -->	
-	<section class="search">
-		<label for="searchInput">
-			<span class="material-symbols-outlined"> search </span>
-		</label>
-		<input type="text" id="searchInput" placeholder="Pesquisar">
+	<section class="container">
+		<!--Filter Button-->
+		<div class="filter_buttons">
+			<button class="active" data-name="todos">Todos</button>
+			<button data-name="ordoviciano">Ordoviciano</button>
+			<button data-name="carbonifero">Carbonifero</button>
+			<button data-name="mesozoico">Mesozoico</button>
+			<button data-name="paleogene">Paleogene</button>
+		</div>
+		<!-- Image cards -->
+		<div class="filterable_cards">
+			<div class="card hide" data-name="ordoviciano">
+				<img src="#" alt="">
+				<div class="card_body">
+					<h6 class="card_title">Ordoviciano 1</h6>
+					<p class="card_text">Lorem, Lorem, its.</p>
+				</div>
+			</div>
+			<div class="card hide" data-name="carbonifero">
+				<img src="#" alt="">
+				<div class="card_body">
+					<h6 class="card_title">Ordoviciano 2</h6>
+					<p class="card_text">Lorem, Lorem, its.</p>
+				</div>
+			</div>
+			<div class="card hide" data-name="mesozoico">
+				<img src="#" alt="">
+				<div class="card_body">
+					<h6 class="card_title">Ordoviciano 3</h6>
+					<p class="card_text">Lorem, Lorem, its.</p>
+				</div>
+			</div>
+			<div class="card hide" data-name="paleogene">
+				<img src="#" alt="">
+				<div class="card_body">
+					<h6 class="card_title">Ordoviciano</h6>
+					<p class="card_text">Lorem, Lorem, its.</p>
+				</div>
+			</div>
+		</div>
 	</section>
-	<div class="card-container">
-	</div>
+	
 	<!-- === footer === -->	
 	<section id="footer">
 		<p>Sobre</p>

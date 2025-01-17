@@ -1,65 +1,22 @@
-const data = [
-	{
-		imagens: "",
-		title: "Staurikosaurus",
-		description:
-			"aa",
-	},
-	{
-		imagens: "",
-		title: "Buriolestes",
-		description:
-			"bb",
-	},
-	{
-		imagens: "",
-		title: "Ubirajara",
-		description:
-			"bb",
-	},
-	{
-		imagens: "",
-		title: "Oxalaia",
-		description:
-			"bb",
-	},
-	{
-		imagens: "",
-		title: "Ibirania",
-		description:
-			"bb",
-	},
-	{
-		imagens: "",
-		title: "Berthasaura",
-		description:
-			"bb",
-	},
-	{
-		imagens: "",
-		title: "Carnotauro",
-		description:
-			"bb",
-	},
-];
+// Select all filter buttons and filterable cards
+const filterButtons = document.querySelectorAll(".filter_buttons button");
+const filterableCards = document.querySelectorAll(".filterable_cards .card");
 
-const cardContainer = document.querySelector(".card-container");
-const searchInput = document.querySelector("#searchInput");
+// Define the filterCards function
+const filterCards = e => {
+	document.querySelector(".active").classList.remove("active");
+	e.target.classList.add("active");
+	
+	// Iterate over each filterable card
+	filterableCards.forEach(card => {
+		// Add "hide" class to hide the card initially
+		card.classList.add("hide");
+		// Check if the card matches the selected filter or "all" is selected
+		if (card.dataset.name === e.target.dataset.name || e.target.dataset.name === "todos"){
+			card.classList.remove("hide");
+		}
+	});
+};
 
-const displayData = data => {
-	cardContainer.innerHTML = "";
-	data.forEach(e =>{
-		cardContainer.innerHTML += `
-		<div class ="card">
-			<img src="${e.imagens}" alt="">
-			<h3>${e.title}</h3>
-			<p> ${e.description}</p>
-		</div>
-		`
-	})
-}
-searchInput.addEventListener("keyup", (e) =>{
-	const search = data.filter(i => i.title.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
-	displayData(search);
-	})
-window.addEventListener("load", displayData.bind(null,data))
+// Add click event listener to each filter button
+filterButtons.forEach(button => button.addEventListener("click", filterCards));

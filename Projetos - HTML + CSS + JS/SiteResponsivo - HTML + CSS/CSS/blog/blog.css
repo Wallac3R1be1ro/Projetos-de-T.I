@@ -246,8 +246,7 @@ div.single-galeria:hover div.conteudo{
 	justify-content: space-between;
 	padding: 40px;
 	width: 80%;
-	margin: 10rem auto 0 auto;
-	margin-bottom: 30px;
+	margin: 4rem auto 0 auto;
 }
 .informativo img{
 	height: 250px;
@@ -257,6 +256,7 @@ div.single-galeria:hover div.conteudo{
 	
 }
 .informativo p{
+	text-align: center;
 	color: #000000;
 	margin-right: 15px;
 }
@@ -361,7 +361,7 @@ img:hover {
 	div.conteudo h1{
 		font-size: 14px;
 	}
-	/* === Footer ===*/
+	/* === Informativo ===*/
 	.informativo{
 		flex-direction: column;
 	}
