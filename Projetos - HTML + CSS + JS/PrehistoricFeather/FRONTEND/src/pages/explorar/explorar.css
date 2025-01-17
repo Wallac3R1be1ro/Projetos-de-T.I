@@ -48,7 +48,7 @@ body , html {
 header {
 	width: 100vw;
 	height: 100vh;
-	background-image: url('../../IMG/Menu-Fundo-Explorar.png');
+	background-image: url('../../assets/Menu-Fundo-Explorar.png');
 	background-position: bottom;
 	background-size: cover;
 	display: flex;
