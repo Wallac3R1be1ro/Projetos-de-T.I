@@ -239,6 +239,7 @@ p {
 	width: 40px;
 	right: 40px;
 	margin-left: 60px auto;
+	cursor: pointer;
 }
 .licenca{
 	width: 100%;
@@ -350,23 +351,5 @@ p {
 	}
 	img:hover {
 		transform: none;
-	}
-}
-@media (max-width: 480px) {
-	/* === Paleorte-Fosseis ===*/
-	.Paleorte-Fosseis .row .col p{
-		font-size: 12px;
-	}
-	/* === Explorar ===*/
-	.explorar p {
-		font-size: 12px;
-	}
-	/* === Periodos-Geologicos ===*/
-	.Periodos-Geologicos .row .col p{
-		font-size: 12px;
-	}
-	/* === Footer ===*/
-	#footer p{
-		font-size: 12px;
 	}
 }

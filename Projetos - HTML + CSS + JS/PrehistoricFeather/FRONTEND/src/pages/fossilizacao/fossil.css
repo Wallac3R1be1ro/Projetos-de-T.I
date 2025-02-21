@@ -26,6 +26,7 @@ ul {
 body , html {
 	overflow-x: hidden;
 }
+
 /* === Navbar ===*/
 .navbar {
 	position: absolute;
@@ -44,6 +45,7 @@ body , html {
 .nav-links li {
 	margin: 0 30px;
 }
+
 /* === Cabeçalho Site ===*/
 header {
 	width: 100vw;
@@ -64,6 +66,7 @@ header {
 	font-size: 4vmin;
 	text-align: center;
 }
+
 /* === Estilo padrão de linha ===*/
 .line {
 	width: 150px;
@@ -77,6 +80,7 @@ header {
 	margin-top: 50px;
 	margin-bottom: 30px;
 }
+
 /* === Estilo padrão botão ===*/
 .ctn {
 	padding: 8px 15px;
@@ -92,6 +96,7 @@ header {
 	cursor: pointer;
 	display: none
 }
+
 /* === Estilo padrão da Section ===*/
 section {
 	width: 80%;
@@ -119,31 +124,39 @@ section {
 	flex-direction: column;
 	align-items: center;
 }
-/* === Texto ===*/
-.container{
+
+/* === Processo de Fosilização ===*/
+.fossilizacao{
     /*Alinhando conteúdo*/
     display: block;
     justify-content: center;
     align-items: center; 
 }
-.container img{
+.fossilizacao img{
     margin-top: 30px;
     max-width: 60%;
 }
-.coluna {
+.fossilizacao p{
+	text-align: center;
+	text-align: 14px;
+}
+
+/* === Rochas e Fosilização === */
+.rochas {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     column-count: 3;
     column-gap: 40px;
 }
-.coluna div{
+.rochas div{
     margin-top: 20px;
 }
-.coluna p{
+.rochas p{
     text-align: center;
+	text-align: 14px;
 }
-.coluna img{
+.rochas img{
     margin-top: 20px;
     display: block;
     margin-left: auto;
@@ -151,24 +164,11 @@ section {
     height: 200px;
     width: 300px;
 }
-@media only screen and (max-width:850px){
-.container{
-	padding: 0;
+
+/* === Cards de Locais de Escavação === */
+.card-container p{
+	text-align: 14px;
 }
-.container p{
-	text-align: center;
-}
-.container img{
-    max-width: 100%;
-}
-.coluna {
-	margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-}
-/* === Pesquisa === */
 .card-container{
 	display: flex;
 	flex-wrap: wrap;
@@ -184,6 +184,7 @@ section {
 	padding: 15px 20px;
 	box-shadow: 0 0 8px rgba(0, 0, 0,0.1);
 }
+
 /* === Footer ===*/
 #footer {
 	width: 100%;
@@ -193,7 +194,11 @@ section {
 	background: #2e5e27;
 	text-align: center;
 }
-#footer p {
+#footer p{
+	color: whitesmoke;
+	margin: 20px auto;
+}
+#footer h2{
 	color: whitesmoke;
 	margin: 20px auto;
 }
@@ -203,6 +208,7 @@ section {
 	width: 40px;
 	right: 40px;
 	margin-left: 60px auto;
+	cursor: pointer;
 }
 .licenca{
 	width: 100%;
@@ -229,9 +235,6 @@ section {
 	}
 	.logo {
 		display: none;
-		/*position: absolute;
-		top: 30px;
-		left: 30px;*/
 	}
 	.nav-links {
 		flex-direction: column;
@@ -252,6 +255,7 @@ section {
 	.nav-links li {
 		margin: 30px auto;
 	}
+	
 	/* === Cabeçalho Site ===*/
 	header {
 		align-items: center;
@@ -265,10 +269,41 @@ section {
 	.row .col {
 		margin: 20px auto;
 	}
-	/* === Footer ===*/
-	#footer p{
-		font-size: 12px;
+	
+	/* === Processo de Fosilização ===*/
+	.fossilizacao{
+		padding: 0;
+		margin: 30px;
 	}
+	.fossilizacao p{
+		font-size: 4vw;
+		text-align: center;
+	}
+	.fossilizacao{
+		padding: 0;
+	}
+	.fossilizacao img{
+		max-width: 100%;
+	}
+
+	/* === Rochas e Fosilização === */
+	.rochas {
+		margin: 0 auto;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.rochas p{
+		text-align: center;
+		font-size: 4vw;
+	}
+	
+	/* === Cards de Locais de Escavação === */
+	.card-container p{
+		font-size: 4vw;
+	}
+	
+	/* === Footer ===*/
 	#footer {
 		padding: 2px;
 	}

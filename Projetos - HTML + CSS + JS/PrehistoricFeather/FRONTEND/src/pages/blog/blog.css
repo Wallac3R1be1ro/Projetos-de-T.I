@@ -26,6 +26,7 @@ ul {
 body , html {
 	overflow-x: hidden;
 }
+
 /* === Navbar ===*/
 .navbar {
 	position: absolute;
@@ -44,6 +45,7 @@ body , html {
 .nav-links li {
 	margin: 0 30px;
 }
+
 /* === Cabeçalho Site ===*/
 header {
 	width: 100vw;
@@ -64,6 +66,7 @@ header {
 	font-size: 4vmin;
 	text-align: center;
 }
+
 /* === Estilo padrão de linha ===*/
 .line {
 	width: 150px;
@@ -77,6 +80,7 @@ header {
 	margin-top: 50px;
 	margin-bottom: 30px;
 }
+
 /* === Estilo padrão botão ===*/
 .ctn {
 	padding: 8px 15px;
@@ -92,6 +96,7 @@ header {
 	cursor: pointer;
 	display: none
 }
+
 /* === Estilo padrão da Section ===*/
 section {
 	width: 80%;
@@ -119,7 +124,8 @@ section {
 	flex-direction: column;
 	align-items: center;
 }
-/* === Conteúdo 1 === */
+
+/* === Galeria de Imagens === */
 .wg1{
 	grid-column: span 1;
 }
@@ -134,14 +140,6 @@ section {
 }
 
 section.galeria{
-	/*width: 90%;
-	height: 90vh;
-	
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);*/
-	
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: 45vh;
@@ -151,14 +149,12 @@ div.single-galeria{
 	position: relative;
 	cursor: pointer;
 }
-
 div.img{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 	position: absolute;
 }
-
 div.img img{
 	position: relative;
 	object-fit: cover;
@@ -166,16 +162,6 @@ div.img img{
 	height: 100%;
 	
 }
-/*tag para escurecer conteúdo*/
-/*div.overflow{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	z-index: 2;
-	background: linear-gradient(transparent, black);
-	opacity: 0.8;
-	transition: all 0.5s ease-in-out;
-*/
 div.conteudo{
 	position: absolute;
 	color: white;
@@ -200,7 +186,7 @@ div.single-galeria:hover div.overflow{
 div.single-galeria:hover div.conteudo{
 	bottom: 20px;
 }
-/* === Card === */
+/* === Cards de Notícias === */
 .card-container{
 	display: flex;
 	justify-content: center;
@@ -253,11 +239,16 @@ div.single-galeria:hover div.conteudo{
 	color: whitesmoke;
 	margin: 20px auto;
 }
+#footer h2{
+	color: whitesmoke;
+	margin: 20px auto;
+}
 #footer img {
 	margin: 10px;
 	width: 40px;
 	right: 40px;
 	margin-left: 60px auto;
+	cursor: pointer;
 }
 .licenca{
 	width: 100%;
@@ -284,9 +275,6 @@ div.single-galeria:hover div.conteudo{
 	}
 	.logo {
 		display: none;
-		/*position: absolute;
-		top: 30px;
-		left: 30px;*/
 	}
 	.nav-links {
 		flex-direction: column;
@@ -320,33 +308,20 @@ div.single-galeria:hover div.conteudo{
 	.row .col {
 		margin: 20px auto;
 	}
-	/* === Galeria ===*/
+	/* === Galeria de Imagens === */
 	.wg1{
 	grid-column: span 2;
 	}
 	.hg1{
 		grid-row: span 2;
 	}
-	
 	section.galeria{
 	grid-template-columns: repeat(2, 1fr);
 	grid-auto-rows: calc(45vh / 2);
-}
+	}
+	/* === Cards de Notícias === */
 	div.conteudo h1{
 		font-size: 14px;
-	}
-	/* === Informativo ===*/
-	.informativo{
-		flex-direction: column;
-	}
-	.informativo img{
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-	.informativo p{
-		text-align: center;
-		font-size: 1rem; /* Tamanho padrão do texto */
-		word-wrap: break-word; /* Quebra de linha para texto longo */
 	}
 	/* === Footer ===*/
 	#footer p{
