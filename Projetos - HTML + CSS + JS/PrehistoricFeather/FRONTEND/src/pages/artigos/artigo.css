@@ -48,7 +48,7 @@ body , html {
 header {
 	width: 100vw;
 	height: 100vh;
-	background-image: url('../../assets/Menu-Fundo-Explorar.png');
+	background-image: url('../../assets/Explorar/Artigo-Fundo.png');
 	background-position: bottom;
 	background-size: cover;
 	display: flex;
@@ -118,6 +118,67 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+/* === Galeria de Imagens === */
+.wg1{
+	grid-column: span 1;
+}
+.wg2{
+	grid-column: span 2;
+}
+.hg1{
+	grid-row: span 1;
+}
+.hg2{
+	grid-row: span 2;
+}
+
+section.galeria{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 45vh;
+}
+div.single-galeria{
+	margin: 4px;
+	position: relative;
+	cursor: pointer;
+}
+div.img{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+}
+div.img img{
+	position: relative;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	
+}
+div.conteudo{
+	position: absolute;
+	color: white;
+	background-color: #2e5e27;
+	border-left: 3px solid white;
+	padding: 0 10px;
+	bottom: 10px;
+	left: 10px;
+	transition: all 0.5s ease-in-out;
+}
+div.conteudo h1{
+	font-size: 18px;
+}
+div.conteudo p{
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+div.single-galeria:hover div.overflow{
+	opacity: 1;
+}
+div.single-galeria:hover div.conteudo{
+	bottom: 20px;
 }
 /* === Sessão de Animais Pré-históricos === */
 .container{
@@ -228,7 +289,17 @@ img:hover {
 	.row .col {
 		margin: 20px auto;
 	}
-	
+	/* === Galeria de Imagens === */
+	.wg1{
+		grid-column: span 2;
+		}
+		.hg1{
+			grid-row: span 2;
+		}
+		section.galeria{
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: calc(45vh / 2);
+		}
 	/* === Sessão de Animais Pré-históricos === */
 	.container{
 	display: block;

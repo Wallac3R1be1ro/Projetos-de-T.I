@@ -50,7 +50,7 @@ body , html {
 header {
 	width: 100vw;
 	height: 100vh;
-	background-image: url('../../assets/DinoImg8.jpeg');
+	background-image: url('../../assets/fossilizacao/DinoImg8.jpeg');
 	background-position: bottom;
 	background-size: cover;
 	display: flex;

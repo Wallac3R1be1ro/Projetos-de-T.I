@@ -50,7 +50,7 @@ body , html {
 header {
 	width: 100vw;
 	height: 100vh;
-	background-image: url('../../assets/Menu-Fundo-Blog.png');
+	background-image: url('../../assets/Blog/Menu-Fundo-Blog.png');
 	background-position: bottom;
 	background-size: cover;
 	display: flex;
