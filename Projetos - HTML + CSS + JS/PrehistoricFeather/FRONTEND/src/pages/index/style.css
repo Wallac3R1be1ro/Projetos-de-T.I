@@ -26,6 +26,9 @@ ul {
 body , html {
 	overflow-x: hidden;
 }
+p{
+	font-size: 18px sans-serif;
+}
 /* === Navbar ===*/
 .navbar {
 	position: absolute;
@@ -119,91 +122,21 @@ section {
 	flex-direction: column;
 	align-items: center;
 }
-/* === Conteúdo 1 === */
-.Paleorte-Fosseis .row{
-	margin-top: 50px;
+
+/* == Estilo padrão de separação de tópicos === */
+.linha-img {
+	width: 100%;
+	height: 40vh;
+	background-image: url('../../assets/Divisor-Conteudo.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
 }
-.Paleorte-Fosseis .row .col img{
-	width: 80%;
-	right: auto;
-}
-.Paleorte-Fosseis .row .col .img2{
-	width: 300px;
-	right: auto;
-}
-h3{
-	color: #2e5e27;
-	margin-top: 40px;
-	margin-bottom: 20px;
-	text-align: center;
-}
-p {
-	color: #000000;
-	padding: 0px 40px;
-}
-.Paleorte-Fosseis h1{
-	text-align: center;
-}
-.Paleorte-Fosseis .ctn{
-	margin-top: 30px;
-}
-/*Button*/
-.button{
-	position:relative;
-	display:inline-block;
-	margin:20px;
-  }
-  
-  .button a{
-	color:white;
-	font-family:Helvetica, sans-serif;
-	font-weight:bold;
-	font-size:16px;
-	text-align: center;
-	text-decoration:none;
-	background-color: #39ac27;
-	display:block;
-	position:relative;
-	padding:10px 25px;
-	
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	text-shadow: 0px 1px 0px #000;
-	filter: dropshadow(color=#000, offx=0px, offy=1px);
-	
-	-webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0  #39ac27;
-	-moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0  #39ac27;
-	box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0  #2e5e27;
-	
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-  }
-  
-  .button a:active{
-	top:10px;
-	background-color:#39ac27;
-	
-	-webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #39ac27;
-	-moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #39ac27;
-	box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #2e5e27;
-  }
-  
-  .button:after{
-	content:"";
-	height:100%;
-	width:100%;
-	padding:4px;
-	position: absolute;
-	bottom:-15px;
-	left:-4px;
-	z-index:-1;
-	background-color:#2B1800;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-  }
-/* === Conteúdo 2 === */
-.Gigantes-do-Passado {
+
+/* === section 2 === */
+.section-2 {
 	width: 100%;
 	height: 100vh;
 	background-image: url('../../assets/index/Menu-Fundo-Blog.png');
@@ -236,23 +169,23 @@ p {
 	margin-top: 40px;
 }
 
-/* === Conteúdo 3 === */
+/* === section 3 === */
 .content-col {
 	width: 40%;
 }
 .image-col {
 	width: 50%;
 }
-.Periodos-Geologicos .row .col h1{
+.section-3 .row .col h1{
 	text-align: center;
 }
-.Periodos-Geologicos .col p{
+.section-3 .col p{
 	text-align: center;
 }
-.Periodos-Geologicos .row .col{
+.section-3 .row .col{
 	width: 100%;
 }
-.Periodos-Geologicos .image-gallery {
+.section-3 .image-gallery {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -279,37 +212,156 @@ p {
 	align-items: center;
 }
 
+/* === section 4 === */
+.section-4 .row{
+	margin-top: 50px;
+}
+.section-4 .row .col img{
+	width: 80%;
+	right: auto;
+}
+.section-4 .row .col .img2{
+	width: 300px;
+	right: auto;
+}
+h3{
+	color: #2e5e27;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+p {
+	color: #000000;
+	padding: 0px 40px;
+}
+.section-4 h1{
+	text-align: center;
+}
+.section-4 .ctn{
+	margin-top: 30px;
+}
+
+/* === section 4 - button game === */
+.button{
+	position:relative;
+	display:inline-block;
+	margin:20px;
+  }
+.button a{
+	color:white;
+	font-family:Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:16px;
+	text-align: center;
+	text-decoration:none;
+	background-color: #39ac27;
+	display:block;
+	position:relative;
+	padding:10px 25px;
+	
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	text-shadow: 0px 1px 0px #000;
+	filter: dropshadow(color=#000, offx=0px, offy=1px);
+	
+	-webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0  #39ac27;
+	-moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0  #39ac27;
+	box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0  #2e5e27;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.button a:active{
+	top:10px;
+	background-color:#39ac27;
+	-webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #39ac27;
+	-moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #39ac27;
+	box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #2e5e27;
+} 
+.button:after{
+	content:"";
+	height:100%;
+	width:100%;
+	padding:4px;
+	position: absolute;
+	bottom:-15px;
+	left:-4px;
+	z-index:-1;
+	background-color:#2B1800;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
 /* === Footer ===*/
-#footer {
-	width: 100%;
-	min-height: 150px;
-	padding: 20px 80px;
-	margin: 0;
-	background: #2e5e27;
+.footer-distributed{
+	background-color: #2e5e27;
+	box-sizing: border-box;
+	widows: 100%;
 	text-align: center;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
 }
-#footer p {
-	color: whitesmoke;
-	margin: 20px auto;
+.footer-right{
+	display: inline;
 }
-#footer h2{
-	color: whitesmoke;
-	margin: 20px auto;
+
+.footer-distributed h3{
+	color: #ffffff;
+	margin: 0;
 }
-#footer img {
-	margin: 10px;
-	width: 40px;
-	right: 40px;
-	margin-left: 60px auto;
+
+.footer-distributed h3 span{
+	color: #e0ac1c;
+}
+
+.footer-right{
+	width: 30%;
+}
+
+.footer-company-about{
+	line-height: 20px;
+	color: #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-company-about span{
+	display: block;
+	color: #ffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-icons{
+	margin-top: 25px;
+}
+
+.footer-icons a {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
 	cursor: pointer;
-}
-.licenca{
-	width: 100%;
-	padding: 20px 20px;
-	margin: 0;
-	background: #272e25;
+	background-color: #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffff;
 	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
 }
+
+.footer-icons a:hover{
+	background-color: #3f71ea;
+}
+.footer-links a:hover{
+	color: #3f71ea;
+}
+
 
 /* === Animação === */
 .ctn:hover{
@@ -328,9 +380,6 @@ p {
 	}
 	.logo {
 		display: none;
-		/*position: absolute;
-		top: 30px;
-		left: 30px;*/
 	}
 	.nav-links {
 		flex-direction: column;
@@ -364,31 +413,30 @@ p {
 	.row .col {
 		margin: 20px auto;
 	}
-	/* === Paleorte-Fosseis ===*/
-	.Paleorte-Fosseis .col img {
-		max-width: 90%;
-	}
-	.Paleorte-Fosseis .row .col p{
-		/*text-align: center;*/
+	p{
+		text-align: center;
 		font-size: 1rem; /* Tamanho padrão do texto */
 		word-wrap: break-word; /* Quebra de linha para texto longo */
 	}
-	.Paleorte-Fosseis .row .col p{
-		font-size: 14px;
+	/* === section-1 === */
+	.section-1 .row img{
+		width: 90%;
+		margin: 20px;
 	}
-	/* === Explorar ===*/
+	/* === section-2 ===*/
 	.explorar {
 		width: 100%;
 	}
 	.explorar p{
-		display: none; /*Ocultando elemento*/
+		display: none;
 	}
-	/* === Periodos-Geologicos ===*/
-	.Periodos-Geologicos .col {
+
+	/* === section-3 ===*/
+	.section-3 .col {
 		width: 100%
 	}
-	.Periodos-Geologicos .col img {
-		max-width: 100%;
+	.section-3 .col img {
+		max-width: 70%;
 	}
 	.image-gallery { 
 		justify-content: center;
@@ -398,16 +446,25 @@ p {
 		display: flex;
 		flex-wrap: wrap;
 	}
-	.Periodos-Geologicos .row .col p{
-		font-size: 12px;
+
+	/* === section-4 ===*/
+	.section-4 .col img {
+		max-width: 90%;
 	}
 	/* === Footer ===*/
-	#footer p{
-		font-size: 12px;
+	.footer-distributed .footer-links{
+		display: flex;
+		margin-bottom: 40px;
+		text-align: center;
 	}
-	#footer {
-		padding: 2px;
+
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
 	}
+
 	img{
 		transition: transform .0s ease;
 	}
